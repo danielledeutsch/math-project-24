@@ -1,0 +1,20 @@
+﻿<Window x:Class="YourNamespace.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Grade Selection" Height="550" Width="900">
+    <Grid Margin="0,0,0,0">
+
+        <MediaElement x:Name="backgroundGif" Source="C:\Users\danie\source\repos\math project 24\math project 24\icegif-47.gif" LoadedBehavior="Manual" />
+        <MediaElement x:Name="backgroundMusic" Source="Christmasmusic.m4a" LoadedBehavior="Manual" />
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="First Grade" Click="GradeButton_Click" Tag="1" Height="35" Width="120" FontSize="16" FontFamily="Yu Gothic UI Semibold" Background="#FFC4D7DC"/>
+            <Button Content="Second Grade" Click="GradeButton_Click" Tag="2" Height="35" IsCancel="True" FontSize="16" FontFamily="Yu Gothic UI Semibold" Background="#FFC4D7DC" Foreground="Black" Width="120"/>
+            <Button Content="Third Grade" Click="GradeButton_Click" Tag="3" Height="35" Width="120" Background="#FFC4D7DC" FontSize="16" FontFamily="Yu Gothic UI Semibold"/>
+            <Button Content="Fourth Grade" Click="GradeButton_Click" Tag="4" Width="120" Height="35" FontFamily="Yu Gothic UI Semibold" FontSize="16" Background="#FFC4D7DC"/>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Left" Margin="70,432,0,0" TextWrapping="Wrap" Text="use headphones for a better experience!" VerticalAlignment="Top" Height="46" Width="292" FontFamily="Aharoni" FontSize="20" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="354,157,0,0" TextWrapping="Wrap" Text="Select Your Grade " VerticalAlignment="Top" Height="46" Width="292" FontFamily="Segoe UI Variable Small Semibold" FontSize="20" Foreground="White"/>
+    </Grid>
+</Window>
+
